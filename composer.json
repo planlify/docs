@@ -1,0 +1,16 @@
+{
+    "name": "planlify/docs",
+    "keywords": ["custura", "documentation"],
+    "homepage": "https://custura.de",
+    "authors": [
+        {
+            "name": "Custură Laurențiu",
+            "email": "mail@custura.de"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}
