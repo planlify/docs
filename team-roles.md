@@ -17,7 +17,7 @@
     - [Calendar](#calendar)
     - [User](#user)
     - [Settings](#settings)
-    - [Appointments](#appointments)
+    - [Calendar Records](#calendar-records)
     - [Clients](#clients)
     - [Holidays](#holidays)
     - [Medicals](#medicals)
@@ -105,9 +105,9 @@ Co-manager performs some of team management tasks such as working with users, pr
 ```bash
 Access rights:
 Has all of the `Supervisor` role permissions plus the following.
- - team:appointment:delete
+ - team:record:delete
     #uses for:
-        #- delete member appointment in team panel 
+        #- delete member record in team panel 
  - team:calendar:override_date_lock
     #uses for:
         #- if a locking cron is available and block the date in calendar, then member with this permission are allowed to overwrite
@@ -186,12 +186,12 @@ Supervisors have a small set of management functions in a team.
 ```bash
 Access rights:
 They have all of default `Member` role permissions plus the following.
- - team:appointment:approve
+ - team:record:approve
     #uses for:
-        #- approve/disapprove member appointment in team panel
- - team:appointment:read
+        #- approve/disapprove member record in team panel
+ - team:record:read
     #uses for:
-        #- view member appointments in team panel
+        #- view member records in team panel
  - team:chart:view
     #uses for:
         #- view members charts in team panel
@@ -235,13 +235,13 @@ Default Member role access rights:
  - team:calendar:track 
     #uses for: 
         #- calendar track
-        #- unschedule appointment in calendar
-        #- update appointment in calendar
-        #- delete appointment in calendar
-        #- change appointment date in calendar
- - team:appointment:view_own
+        #- unschedule record in calendar
+        #- update record in calendar
+        #- delete record in calendar
+        #- change record date in calendar
+ - team:record:view_own
     #uses for:
-        #- view own appointments in team panel
+        #- view own records in team panel
  - team:chart:view_own
     #uses for:
         #- view own charts in team panel
@@ -265,7 +265,7 @@ Default Member role access rights:
         #- view own informations in team panel members
  - team:calendar:override_own_date_lock
     #uses for:
-        #- override own date for appointment in calendar
+        #- override own date for record in calendar
  - team:medical:create
     #uses for:
         #- create medicals in team panel
@@ -297,7 +297,7 @@ Below you can see all available permissions
 <a name="calendar"></a>
 #### Calendar
 ```bash
-team:calendar:track                     - member can use calendar to track appointments.
+team:calendar:track                     - member can use calendar to track records.
 team:calendar:override_date_lock        - allows override date lock for lower rank roles.
 team:calendar:override_own_date_lock    - allows override date lock for self.
 ```
@@ -321,13 +321,13 @@ team:setting:manage_configs - allows to manage team configs.
 team:setting:manage_plugins - allows to manage team plugins.
 ```
 
-<a name="appointments"></a>
-#### Appointments
+<a name="calendar-records"></a>
+#### Calendar Records
 ```bash
-team:appointment:view_own   - can read own appointments.
-team:appointment:read       - can read other team members appointments in team panel.
-team:appointment:approve    - can approve/disapprove other team members appointments in team panel.
-team:appointment:delete     - can delete appointments.
+team:record:view_own   - can read own records.
+team:record:read       - can read other team members records in team panel.
+team:record:approve    - can approve/disapprove other team members records in team panel.
+team:record:delete     - can delete records.
 ```
 
 <a name="clients"></a>

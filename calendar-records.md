@@ -1,3 +1,3 @@
-# Appointments
+# Calendar Records
 
 - [Introduction](#introduction)
